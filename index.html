@@ -8,23 +8,6 @@
     <div id="app">React has not yet rendered</div>
     <script src="node_modules/react/dist/react.js"></script>
     <script src="node_modules/react-dom/dist/react-dom.js"></script>
-    <script>
-      var div = React.DOM.div
-      var h1 = React.DOM.h1
-
-      var MyFirstComponent = React.createClass({
-        // createClass is blueprint of new type of component
-        render: function () {
-          return (
-            // React.DOM.div(null,
-            div(null,
-              // null is a attribute, can be a class name or id
-              h1(null, "This is my first component!")
-            )
-          )
-        }
-      })
-      ReactDOM.render(React.createElement(MyFirstComponent), document.getElementById('app'))
-    </script>
+    <script src="js/ClientApp.js"></script>
   </body>
 </html>
