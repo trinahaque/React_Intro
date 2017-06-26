@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-react-es2015": "^1.2.0"
+  },
+  "scripts": {
+    "start": "index.js"
+  }
+}
