@@ -5,7 +5,7 @@ class newUser{
     this.name = `${first_name} ${last_name}`
     this.sayHello();
   }
-  sayHello(){
+  sayHello() {
     console.log(`Hello my name is ${this.name}`)
   }
 }
