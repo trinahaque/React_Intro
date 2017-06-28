@@ -19,7 +19,7 @@ const webpackConfig = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpglpnglsvg)$/,
+        test: /\.(jpg|png|svg)$/,
         loader: 'url-loader',
         options: {
           limit: 200000,
@@ -40,7 +40,6 @@ const webpackConfig = {
     hot: true,
     host: process.env.HOST,
     port: process.env.PORT,
-    status: 'errors-only',
     historyApiFallback: true,
     overlay: {
       errors: true,
@@ -48,7 +47,7 @@ const webpackConfig = {
     },
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin();
+    new webpack.HotModuleReplacementPlugin(),
   ],
 }
 
