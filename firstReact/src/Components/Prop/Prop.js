@@ -2,6 +2,7 @@ import React from "react"
 class Prop extends React.Component{
   constructor(props){
     super(props)
+    // clarify this later
     this.name = `${this.props.user.first_name} ${this.props.user.last_name}`
   }
   render(){
