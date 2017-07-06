@@ -17,13 +17,11 @@ class Counter extends React.Component{
   }
 
   render(){
-    const color = this.state.color;
-    let button = null;
     return (
       <div>
         <h1>Hello, {this.props.name}</h1>
         <div className={this.state.color}>
-          <button onClick={(e) => this.buttonClick()}>Click Me</button>
+          <button onClick={() => this.buttonClick()}>Click Me</button>
         </div>
         <p>You clicked me {this.state.counter} times</p>
       </div>
