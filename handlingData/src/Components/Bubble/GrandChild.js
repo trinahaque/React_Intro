@@ -4,12 +4,12 @@ class GrandChild extends React.Component{
         super(props);
         this.state = props.user;
     }
-    updateUser = (e) => {
-      this.setState({
-        first_name: "Grand Child",
-        last_name: "Update self"
-      })
-    }
+    // updateUser = (e) => {
+    //   this.setState({
+    //     first_name: "Grand Child",
+    //     last_name: "Update self"
+    //   })
+    // }
 
     componentWillReceiveProps(props){
       this.setState({

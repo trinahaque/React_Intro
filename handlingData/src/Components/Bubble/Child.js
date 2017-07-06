@@ -16,6 +16,7 @@ class Child extends React.Component{
             last_name: props.user.last_name
         })
     }
+
     render(){
         return (
             <div className='row child'>
