@@ -14,8 +14,7 @@ class Clock extends React.Component{
   }
 
   componentDidMount(){
-    this.timerID = setInterval(
-      () =>
+    this.timerID = setInterval(() =>
           this.tick(), 1000
     ); console.log("set interval still running")
   }
@@ -23,6 +22,8 @@ class Clock extends React.Component{
   componentWillUnmount(){
     console.log("set interval stopped running")
     clearInterval(this.timerID);
+    // console.log("h2", document.body.h2);
+    // document.body.removeChild(this.h2)
   }
 
   render(){

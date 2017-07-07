@@ -22,3 +22,19 @@ function showProperties(){
   createText("id", dummyText.id, mainDiv);
   createText("hidden", dummyText.hidden, mainDiv);
 }
+
+
+styleButton.addEventListener("mouseenter", addStyles);
+styleButton.addEventListener("mouseleave", removeStyles);
+
+function addStyles(){
+  dummyText.style.color = "#474c4f";
+  dummyText.style.border = "1px solid black";
+  dummyText.style.fontSize = "35px";
+  dummyText.style.backgroundColor = "blue";
+}
+
+
+function removeStyles(){
+  dummyText.removeAttribute("style");
+}
